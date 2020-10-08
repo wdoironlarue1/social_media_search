@@ -9,7 +9,7 @@ router.get("/", async function (req, res, next) {
     consumer_secret: "0tUmd35cLLVqgsQ6ttpgMf0zQVUSrEiSmngC2nc0baZldVbN5i",
     app_only_auth: true,
     timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
-    strictSSL: true, // optional - requires SSL certificates to be valid.
+    strictSSL: true, // optional - requires SSL certificates to be valid
   });
 
   //add error handling
