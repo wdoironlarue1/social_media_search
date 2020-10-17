@@ -2,9 +2,10 @@ import React from "react";
 
 const QueryResult = (props) => {
   return (
-    <div>
+    <div className="Query-result">
       <p>tweet created at {props.created_at}</p>
-      <p>tweet content: {props.full_text}</p>
+      <p>tweet content: {props.text}</p>
+      <a href={props.url}>view the post here</a>
     </div>
   );
 };

@@ -9,10 +9,13 @@ class App extends Component {
   };
 
   handleClickButton = () => {
-    //@TODO handle no query input
+    //@TODO handle no query input (make a toast or something)
     fetch("http://localhost:9000/testAPI?query=" + this.state.queryInput)
       .then((res) => res.json())
-      .then((res) => this.setState({ queryResults: res.statuses }));
+      .then((res) => {
+        console.log(res);
+        this.setState({ queryResults: res });
+      });
   };
 
   handleChangeInput = (e) => {
@@ -24,7 +27,7 @@ class App extends Component {
     for (let index in this.state.queryResults) {
       queryResults.push(
         <QueryResult
-          key={this.state.queryResults[index].id}
+          key={index}
           {...this.state.queryResults[index]}
         ></QueryResult>
       );
@@ -42,8 +45,8 @@ class App extends Component {
             ></input>
             <button onClick={this.handleClickButton}>call api</button>
           </div>
-          {queryResults}
         </header>
+        {queryResults}
       </div>
     );
   }
