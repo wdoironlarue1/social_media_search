@@ -2,6 +2,8 @@ Simple web app that uses APIs of multiple social media sites to search for a giv
 
 backend created using express, frontend craeted using create-react-app
 
+uses nodemon to restart the server when changes are made 
+
 ----------
 TODO
 - make it more visually appealing
