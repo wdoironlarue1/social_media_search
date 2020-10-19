@@ -1,6 +1,6 @@
 Simple web app that uses APIs of multiple social media sites to search for a given string
 
-backend created using express, frontend craeted using create-react-app
+backend created using express, frontend created using create-react-app
 
 uses nodemon to restart the server when changes are made 
 
