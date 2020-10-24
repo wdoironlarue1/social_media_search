@@ -1,8 +1,8 @@
 import React from "react";
 
-const QueryResult = (props) => {
+const SearchResult = (props) => {
   return (
-    <div className="Query-result">
+    <div className="SearchResult">
       <p>tweet created at {props.created_at}</p>
       <p>tweet content: {props.text}</p>
       <a href={props.url}>view the post here</a>
@@ -10,4 +10,4 @@ const QueryResult = (props) => {
   );
 };
 
-export default QueryResult;
+export default SearchResult;
