@@ -10,14 +10,10 @@ to run, clone repo, navigate to the `api` folder in terminal, and run `npm start
 
 ----------
 TODO
-- make it more visually appealing
-- add logos of social media around title
-- use the user's input for the search
-- add reddit search
 - add instagram search
 - add FB search
 - add tests to front-end components
 - add tests to back-end logic
-- remove unneeded data grabbed from apis serverside
+- add better error handling on failed http requests
 ----------
 
