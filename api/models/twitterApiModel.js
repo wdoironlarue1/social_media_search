@@ -30,7 +30,7 @@ function getTwitterData(query) {
         type: "twitter",
         text: tweet.full_text,
         url: "https://twitter.com/user/status/" + tweet.id_str,
-        created_at: tweet.created_at,
+        created_at: new Date(tweet.created_at).toLocaleString(),
       };
     });
   };

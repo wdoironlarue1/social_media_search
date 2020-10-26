@@ -2,9 +2,11 @@ Simple web app that uses APIs of multiple social media sites to search for a giv
 
 backend created using express, frontend created using create-react-app
 
-uses nodemon to restart the server when changes are made 
+uses nodemon in dev to restart the server when changes are made 
 
 in order for this app to work (if you were to clone the repo, install the dependencies, and run the api and client) you'll need to create a `config.js` file in the `api` directory that exports an object that has credentials such as reddit username, reddit password, reddit app id, reddit app secret, twitter consumer key, and twitter consumer secret)
+
+to run, clone repo, navigate to the `api` folder in terminal, and run `npm start`. Then navigate to the `client` folder and run `npm start`.
 
 ----------
 TODO
@@ -18,4 +20,4 @@ TODO
 - add tests to back-end logic
 - remove unneeded data grabbed from apis serverside
 ----------
-to run, clone repo, navigate to the `api` folder in terminal, and run `npm start`. Then navigate to the `client` folder and run `npm start`.
+

@@ -26,7 +26,7 @@ const refactorRedditData = (response) => {
         type: "reddit",
         text: post.data.title,
         url: "https://www.reddit.com" + post.data.permalink,
-        created_at: new Date(post.data.created_utc * 1000).toString(),
+        created_at: new Date(post.data.created_utc * 1000).toLocaleString(),
       };
     });
   };
