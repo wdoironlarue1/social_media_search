@@ -20,7 +20,7 @@ const SearchResult = (props) => {
         <img src={logo} alt="" className="SearchResult-image-img"></img>
       </div>
       <p>Posted {props.created_at}</p>
-      <p>tweet content: {props.text}</p>
+      <p>{props.text}</p>
       <a href={props.url}>view the post here</a>
     </div>
   );

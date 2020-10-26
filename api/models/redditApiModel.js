@@ -11,8 +11,7 @@ function getRedditData(query) {
     let promise = redditApiClient
       .get("/search", {
         q: query,
-        count: 2,
-        limit: 2,
+        limit: 15,
         sort: "hot",
       })
       .then((res) => refactorRedditData(res));

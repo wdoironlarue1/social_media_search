@@ -13,14 +13,30 @@ function getTwitterData(query) {
     let promise = twitterApiClient
       .get("search/tweets", {
         //make the date dynamic (maybe the past 3 days or something)
-        q: query + " since:2020-07-11",
-        count: 2,
+        q: query + " since:" + getPastDate(3),
+        count: 100,
         result_type: "popular",
         tweet_mode: "extended",
       })
       .then((res) => refactorTwitterData(res));
   
     return promise;
+  }
+
+  getPastDate = (daysAgo) => {
+    let date = new Date()
+    date.setDate(date.getDate() - daysAgo);
+    let d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
   }
 
   const refactorTwitterData = (response) => {
