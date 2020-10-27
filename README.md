@@ -17,5 +17,5 @@ TODO
 - add tests to front-end components
 - add tests to back-end logic
 - add better error handling on failed http requests
+- maybe deploy the app (or maybe just the api) using AWS??
 ----------
-
